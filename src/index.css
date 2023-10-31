@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Libre+Baskerville&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.text {
+  background: linear-gradient(to right, #73d2a5 0%, #d0e537 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient-1 {
+  background: linear-gradient(#252728, #252728) padding-box,
+    linear-gradient(to right, #73d2a5, #d0e537) border-box;
+  border: 3px solid transparent;
+  border-style: solid;
+}
