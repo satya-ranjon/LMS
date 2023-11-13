@@ -54,7 +54,7 @@ const Select: React.FC<SelectProps> = ({
         <BiSolidDownArrow className={`${isOpen && "rotate-180"}`} />
       </div>
       {isOpen && (
-        <div className=" absolute left-0 top-10 bg-dark-1 w-full text-center uppercase border-[1px]">
+        <div className=" absolute z-50 left-0 top-10 bg-dark-1 w-full text-center uppercase border-[1px]">
           <div className="flex flex-col gap-2 ">
             {options?.map((option, index) => {
               const isSelected = selectedIndex === index;
