@@ -6,11 +6,17 @@ interface SelectOption {
   value: string;
 }
 
-export interface SelectProps {
+interface RenderLabelProps {
+  isSelected: SelectOption;
+  getRecommendedLabelProps: (overrideProps?: Object) => Object;
+}
+
+interface SelectProps {
   label?: string;
   options?: Array<SelectOption>;
   onOptionSelected?: (option: SelectOption) => void;
   defaultSelectedIndex?: number | null;
+  renderLabel?: (props: RenderLabelProps) => React.ReactNode;
 }
 
 const Select: React.FC<SelectProps> = ({
@@ -18,6 +24,7 @@ const Select: React.FC<SelectProps> = ({
   options = [],
   onOptionSelected,
   defaultSelectedIndex = null,
+  renderLabel,
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -45,14 +52,33 @@ const Select: React.FC<SelectProps> = ({
     selectedOption = options[selectedIndex];
   }
 
+  // const renderLabelProps: RenderLabelProps = {};
+  const renderLabelProps: RenderLabelProps = {
+    isSelected: options[selectedIndex || defaultSelectedIndex],
+    getRecommendedLabelProps: (overrideProps = {}) => ({
+      // here we will define default props
+      onClick: () => handleOpenCloseDropDown(),
+      // here we will spread override props (user given props)
+      ...overrideProps,
+    }),
+  };
+
   return (
-    <div className=" text-light-1 text-md font-semibold border-2 py-1 px-2 rounded-lg relative select-none">
-      <div
-        onClick={handleOpenCloseDropDown}
-        className=" flex justify-start items-center gap-1 cursor-pointer">
-        <span>{selectedOption === null ? label : selectedOption.label}</span>
-        <BiSolidDownArrow className={`${isOpen && "rotate-180"}`} />
-      </div>
+    <div
+      className={`${
+        !renderLabel && "border-2"
+      } text-light-1 text-md font-semibold  py-1 px-2 rounded-lg relative select-none`}>
+      {renderLabel ? (
+        renderLabel(renderLabelProps)
+      ) : (
+        <div
+          onClick={handleOpenCloseDropDown}
+          className=" flex justify-start items-center gap-1 cursor-pointer">
+          <span>{selectedOption === null ? label : selectedOption.label}</span>
+          <BiSolidDownArrow className={`${isOpen && "rotate-180"}`} />
+        </div>
+      )}
+
       {isOpen && (
         <div className=" absolute z-50 left-0 top-10 bg-dark-1 w-full text-center uppercase border-[1px]">
           <div className="flex flex-col gap-2 ">
