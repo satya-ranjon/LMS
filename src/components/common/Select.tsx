@@ -1,5 +1,6 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import { BiSolidDownArrow } from "react-icons/bi";
+import useOutsideClick from "../../hooks/useOutsideClick";
 
 interface SelectOption {
   label: string;
@@ -17,6 +18,7 @@ interface SelectProps {
   onOptionSelected?: (option: SelectOption) => void;
   defaultSelectedIndex?: number | null;
   renderLabel?: (props: RenderLabelProps) => React.ReactNode;
+  optionsColor?: string;
 }
 
 const Select: React.FC<SelectProps> = ({
@@ -25,9 +27,16 @@ const Select: React.FC<SelectProps> = ({
   onOptionSelected,
   defaultSelectedIndex = null,
   renderLabel,
+  optionsColor = "text-zinc-500",
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+
+  useOutsideClick(dropdownRef, () => {
+    setIsOpen(false);
+  });
 
   const handleOpenCloseDropDown = () => {
     setIsOpen((prev) => !prev);
@@ -63,11 +72,17 @@ const Select: React.FC<SelectProps> = ({
     }),
   };
 
+  const optionsWidth = renderLabel
+    ? `w-${options[0].label?.length * 2 + 10}`
+    : "w-full";
+
   return (
     <div
+      ref={dropdownRef}
       className={`${
-        !renderLabel && "border-2"
-      } text-light-1 text-md font-semibold  py-1 px-2 rounded-lg relative select-none`}>
+        !renderLabel &&
+        "border-2 py-1  px-2 text-light-1 text-md font-semibold   rounded-lg  select-none"
+      } relative flex justify-center items-center`}>
       {renderLabel ? (
         renderLabel(renderLabelProps)
       ) : (
@@ -80,7 +95,8 @@ const Select: React.FC<SelectProps> = ({
       )}
 
       {isOpen && (
-        <div className=" absolute z-50 left-0 top-10 bg-dark-1 w-full text-center uppercase border-[1px]">
+        <div
+          className={` ${optionsWidth} absolute z-50 left-0 top-10 bg-dark-1 text-dark-1  text-center uppercase border-[1px]`}>
           <div className="flex flex-col gap-2 ">
             {options?.map((option, index) => {
               const isSelected = selectedIndex === index;
@@ -89,9 +105,9 @@ const Select: React.FC<SelectProps> = ({
                 <div
                   onClick={() => handleOptionClick(option, index)}
                   key={index}
-                  className={` cursor-pointer w-full hover:bg-[#333f2a] px-2 py-1  ${
+                  className={`${optionsColor} cursor-pointer w-full hover:bg-[#333f2a] px-2 py-1 text-base  font-semibold ${
                     isSelected &&
-                    "bg-gradient-to-r from-[#73d2a5] to-[#d0e537] text-dark-1"
+                    "bg-gradient-to-r from-[#73d2a5] to-[#d0e537] text-zinc-900"
                   } `}>
                   {option.label}
                 </div>
