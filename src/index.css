@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;0,700;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,6 +9,9 @@
   font-family: "Inter", sans-serif;
 }
 
+.textMono {
+  font-family: "Sometype Mono", monospace;
+}
 .text {
   background: linear-gradient(to right, #73d2a5 0%, #d0e537 100%);
   -webkit-background-clip: text;
@@ -19,4 +23,23 @@
     linear-gradient(to right, #73d2a5, #d0e537) border-box;
   border: 3px solid transparent;
   border-style: solid;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 28px !important;
+  color: #252728 !important;
+}
+
+/* This will customize the vertical scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #71706f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a3e635;
 }

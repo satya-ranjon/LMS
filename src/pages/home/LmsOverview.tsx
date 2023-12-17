@@ -1,7 +1,8 @@
+import React from "react";
 import Container from "../../components/common/Container";
 import images from "../../constant/images.js";
 
-const LmsOverview = () => {
+const LmsOverview: React.FC = () => {
   return (
     <div className="  bg-bg4 bg-cover bg-no-repeat bg-center">
       <Container>

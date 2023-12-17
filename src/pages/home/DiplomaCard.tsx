@@ -1,7 +1,8 @@
+import React from "react";
 import images from "../../constant/images.js";
 import { BsDot } from "react-icons/bs";
 
-const DiplomaCard = () => {
+const DiplomaCard: React.FC = () => {
   return (
     <div className="py-48  ">
       <div className="grid grid-cols-1 lg:grid-cols-2  gap-12 relative">

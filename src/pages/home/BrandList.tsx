@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "../../components/common/Container";
 import { images } from "../../constant";
 
@@ -12,7 +13,7 @@ const brands = [
   { img: images.facebook },
 ];
 
-const BrandList = () => {
+const BrandList: React.FC = () => {
   return (
     <Container>
       <div className=" bg-dark-1 p-8 py-0 w-full rounded-xl grid grid-cols-2 md:grid-cols-4 items-center">

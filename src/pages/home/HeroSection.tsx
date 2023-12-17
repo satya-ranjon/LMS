@@ -1,8 +1,9 @@
+import React from "react";
 import Button, { ButtonSize } from "../../components/common/Button";
 import Container from "../../components/common/Container";
 import { images } from "../../constant";
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <div
       className={` w-full bg-no-repeat bg-cover  bg-center bg-hero-pattern  `}>

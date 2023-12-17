@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "1",
+    "question": "Who reviews assignments?",
+    "answers": "Assignments are typically reviewed by our team of experienced instructors and educators who provide constructive feedback to help you improve and succeed in your learning journey"
+  },
+  {
+    "_id": "2",
+    "question": "How many hours per week will I need to study?",
+    "answers": "Everything depends on you . oN average, our students study from 4 to 18 hours per week to optimally move through the program quickly and achieve their goals in time. The system is built in such a way that you can comfortably move along the course progress line, there you choose the schedule and time of study "
+  },
+  {
+    "_id": "3",
+    "question": "What is the training schedule? How can you combine it with work?",
+    "answers": "The training schedule is flexible, allowing you to balance it with your work commitments. You can access course materials at any time, and the platform is designed to accommodate various schedules, making it convenient for working professionals."
+  },
+  {
+    "_id": "4",
+    "question": "Is a certificate of completion issued? If so, which one?",
+    "answers": "Yes, upon successful completion of a course, a certificate will be issued. The certificate specifies the course title and demonstrates your proficiency in the subject matter."
+  },
+  {
+    "_id": "5",
+    "question": "What is Education LMS?",
+    "answers": " Education LMS stands for Learning Management System, a platform designed to facilitate online learning and training. It provides a centralized hub for course materials, assignments, assessments, and communication between instructors and learners."
+  },
+  {
+    "_id": "6",
+    "question": "Where can I see testimonials from students who have completed training on you platform?",
+    "answers": "You can find testimonials from our satisfied students on the website's testimonial page. These testimonials showcase the positive experiences and success stories of individuals who have benefited from our courses."
+  },
+  {
+    "_id": "7",
+    "question": "Will I still have access to the materials after completing the course?",
+    "answers": "Yes, you will have continued access to the course materials even after completing the course. This allows you to revisit the content for reference or refresh your knowledge whenever needed"
+  }
+]

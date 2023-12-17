@@ -1,8 +1,9 @@
 import Container from "../../components/common/Container";
 import images from "../../constant/images.js";
 import Button, { ButtonSize } from "../../components/common/Button.js";
+import React from "react";
 
-const ChooseCourse = () => {
+const ChooseCourse: React.FC = () => {
   return (
     <div className=" py-24 md:py-36 bg-gradient-to-r from-[#73d2a6c7] to-[#d1e537c7]  ">
       <Container>

@@ -15,6 +15,10 @@ export default {
       },
       backgroundImage: () => ({
         "hero-pattern": "url('./src/assets/homebg.png')",
+        diplomacardbg: "url('./src/assets/diplomacardbg.png')",
+        bg2: "url('./src/assets/bg2.png')",
+        bg4: "url('./src/assets/bg4.png')",
+        bg5: "url('./src/assets/bg5.png')",
       }),
     },
   },

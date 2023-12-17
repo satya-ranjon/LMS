@@ -1,0 +1,64 @@
+[
+  {
+    "_id": "01",
+    "name": "3D in Illustrator: Objects and textures. Working with PBR textures.",
+    "img": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921090/pexels-google-deepmind-17485708_2_bknfnq.jpg",
+    "durations": "59min",
+    "students": "7,500",
+    "author": {
+      "name": "Michael smith",
+      "avatar": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921154/1_iretqv.png"
+    },
+    "tags": ["Game Design", "Illustration", "Drawing"]
+  },
+  {
+    "_id": "02",
+    "name": "Drawing & Animation. Most powerful tools overview.",
+    "img": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921090/7da953dafbcf7771b8adc2aa75df54cd_q1vvob.jpg",
+    "durations": "45min",
+    "students": "4,500",
+    "author": {
+      "name": "Diana Richmond",
+      "avatar": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921153/8_hllv10.png"
+    },
+    "tags": ["Animation", "Drawing"]
+  },
+  {
+    "_id": "03",
+    "name": "Mobile Design - tricks & tips. Best patterns for beginners.",
+    "img": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921090/9811893a64ca7f6e101d794a93ffe5c9_zfy3vr.jpg",
+    "durations": "1h 12min",
+    "students": "8,500",
+    "author": {
+      "name": "Dave Wilson",
+      "avatar": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921153/7_m3fu0i.png"
+    },
+    "tags": ["UI/UX Design"]
+  },
+  {
+    "_id": "04",
+    "name": "3D in Illustrator: Objects and textures. Working with PBR textures.",
+    "img": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921090/pexels-google-deepmind-17485708_2_bknfnq.jpg",
+    "durations": "59min",
+    "students": "7,500",
+    "author": {
+      "name": "Michael smith",
+      "avatar": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921154/1_iretqv.png"
+    },
+    "tags": ["Game Design", "Illustration", "Drawing"]
+  },
+  {
+    "_id": "05",
+    "name": "Mobile Design - tricks & tips. Best patterns for beginners.",
+    "img": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921090/9811893a64ca7f6e101d794a93ffe5c9_zfy3vr.jpg",
+    "durations": "1h 12min",
+    "students": "8,500",
+    "author": {
+      "name": "Dave Wilson",
+      "avatar": "https://res.cloudinary.com/dcpbu1ffy/image/upload/v1698921153/7_m3fu0i.png"
+    },
+    "tags": ["UI/UX Design"]
+  },
+
+  { "_id": "08" }
+]

@@ -1,7 +1,7 @@
 import { BiSolidDownArrow } from "react-icons/bi";
 import Container from "../../components/common/Container";
 import answersQuestion from "../../data/answersQuestion.json";
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const modalVariants = {
@@ -17,7 +17,7 @@ const modalVariants = {
     },
   },
 };
-const AnswersQuestion = () => {
+const AnswersQuestion: React.FC = () => {
   const [active, setActive] = useState<number>(1);
 
   const handleActive = (value: number) => {

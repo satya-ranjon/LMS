@@ -1,6 +1,6 @@
 import Button from "../../components/common/Button";
 import Container from "../../components/common/Container";
-import { useState, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import courses from "../../data/courses.json";
 import { BsBookmark, BsBookmarkFill } from "react-icons/bs";
 import {
@@ -10,7 +10,7 @@ import {
 import useDisplay from "../../hooks/useDisplay";
 import Avatar from "../../components/common/Avatar";
 
-const FreeLessons = () => {
+const FreeLessons: React.FC = () => {
   const [[start, end], setPage] = useState([0, 3]);
   const [dotActive, setDotActive] = useState<number>(0);
   const [windowWidth] = useDisplay();

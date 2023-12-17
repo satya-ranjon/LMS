@@ -1,9 +1,10 @@
 import Button, { ButtonSize } from "../common/Button";
 import Container from "../common/Container";
-import Select from "../common/Select";
 import Logo from "../common/Logo";
 import useDisplay from "../../hooks/useDisplay";
 import { useLayoutEffect, useState } from "react";
+import LanguagesSelect from "../common/LanguagesSelect";
+import { useNavigate } from "react-router-dom";
 
 const menu = [
   { link: "/", name: "Explore" },
@@ -15,15 +16,10 @@ const menu = [
   { link: "/", name: "About project" },
 ];
 
-const languages = [
-  { value: "eng", label: "ENG" },
-  { value: "bng", label: "BNG" },
-];
-
 const Navbar = () => {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState<boolean>(false);
-  const [windowWidth, scrollY] = useDisplay();
-  console.log(windowWidth);
+  const [windowWidth] = useDisplay();
+  const navigate = useNavigate();
 
   useLayoutEffect(() => {
     if (windowWidth > 1024) {
@@ -37,9 +33,6 @@ const Navbar = () => {
     setMobileMenuIsOpen((prev) => !prev);
   };
 
-  const handleSelectLanguage = (value: object) => {
-    // console.log("value", value);
-  };
   return (
     <div className="bg-dark-1 py-4">
       <Container>
@@ -49,10 +42,10 @@ const Navbar = () => {
 
             {mobileMenuIsOpen && (
               <div
-                className={`text-light-1 ${
+                className={`text-light-1 z-50 ${
                   windowWidth > 1024
-                    ? "  flex gap-5 text-md font-semibold justify-start items-center "
-                    : " absolute bg-dark-1 top-20 w-[250px] h-screen right-0 px-3"
+                    ? "  flex gap-5 text-base font-semibold justify-start items-center "
+                    : " fixed bg-dark-1 top-0 w-[250px] h-screen right-0 px-3"
                 }`}>
                 {menu.map((item, i) => (
                   <div
@@ -65,23 +58,19 @@ const Navbar = () => {
                     {item.name}
                   </div>
                 ))}
-                <div
-                  className={`${
-                    windowWidth > 1024 ? "hidden" : " flex gap-3"
-                  }`}>
-                  <span> Language</span>
-                  <Select
-                    // label=""
-                    defaultSelectedIndex={0}
-                    options={languages}
-                    onOptionSelected={handleSelectLanguage}
-                  />
+                <div className={`${windowWidth > 1024 ? "hidden" : " "}`}>
+                  <span className=""> Language</span>
+                  <LanguagesSelect />
                 </div>
               </div>
             )}
           </div>
           <div className=" flex justify-start items-center gap-2 md:gap-5 ">
-            <Button size={ButtonSize.SM}>Personal LMS</Button>
+            <Button
+              onClick={() => navigate("/dashboard/courses")}
+              size={ButtonSize.SM}>
+              Personal LMS
+            </Button>
             <button onClick={handleMobileMenu}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,13 +88,7 @@ const Navbar = () => {
             </button>
 
             <div className=" hidden xl:flex items-center justify-center ">
-              <Select
-                // label=""
-                defaultSelectedIndex={0}
-                options={languages}
-                onOptionSelected={handleSelectLanguage}
-              />
-              b
+              <LanguagesSelect />
             </div>
           </div>
         </div>

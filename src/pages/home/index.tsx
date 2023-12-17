@@ -12,8 +12,9 @@ import Reviews from "./Reviews.js";
 import Blogs from "./Blogs.js";
 import Subscribe from "./Subscribe.js";
 import AnswersQuestion from "./AnswersQuestion.js";
+import React from "react";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <>
       <div className="relative">

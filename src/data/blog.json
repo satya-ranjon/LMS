@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "1",
+    "title": "PHP website back-end. Database, libraries, frameworks and control versions of the system.",
+    "img": "https://i.ibb.co/m4cSmvt/1-1.webp",
+    "description": "",
+    "views": 5581,
+    "author": {
+      "avatar": "https://i.ibb.co/QdC2Qb0/5.png",
+      "name": "Dave Wilson",
+      "company": "Google",
+      "profession": "PHP Developer"
+    },
+    "createAt": "2023-11-12T06:47:30.466Z",
+    "tags": ["PHP", "Web Development"]
+  },
+  {
+    "_id": "2",
+    "title": "Top 5 effective marketing strategies in 2023. 10 metrics that an SMM specialist needs to monitor.",
+    "img": "https://i.ibb.co/kGS3QWt/1-1.jpg",
+    "description": "",
+    "views": 684,
+    "author": {
+      "avatar": "https://i.ibb.co/djvYz2W/6.png",
+      "name": "Michael Boss",
+      "company": "Nvidia",
+      "profession": "Lead Marketing"
+    },
+    "createAt": "2023-11-12T06:47:30.466Z",
+    "tags": ["Marketing"]
+  },
+  {
+    "_id": "3",
+    "title": "Quick ways to export illustrations to blender and further animate them. Plugins for processing vector objects.",
+    "img": "https://i.ibb.co/ZzyKPD6/1-2.jpg",
+    "description": "",
+    "views": 874,
+    "author": {
+      "avatar": "https://i.ibb.co/RCK2ht8/7.png",
+      "name": "Diana Richmond",
+      "company": "Pixar",
+      "profession": "Senior Motion Designer"
+    },
+    "createAt": "2023-11-12T06:47:30.466Z",
+    "tags": ["Illustration", "Animation"]
+  },
+  {
+    "_id": "4",
+    "title": "How to design user friendly interfaces in games? Analysis of common mistakes in audience research",
+    "img": "https://i.ibb.co/W3NSX8t/1-3.jpg",
+    "description": "",
+    "views": 9851,
+    "author": {
+      "avatar": "https://i.ibb.co/jyRf853/8.png",
+      "name": "Nikolai Ivanov",
+      "company": "Clickable",
+      "profession": "Lead UI/UX Designer"
+    },
+    "createAt": "2023-11-12T06:47:30.466Z",
+    "tags": ["UI/UX Design", "Game Design"]
+  },
+  {
+    "_id": "5",
+    "title": "Testing Ai networks. Automating queries and improving the response of data processing",
+    "img": "https://i.ibb.co/pP7h4HP/1-3.webp",
+    "description": "",
+    "views": 1125,
+    "author": {
+      "avatar": "https://i.ibb.co/p2Y4qBF/1.png",
+      "name": "Christopher Brown",
+      "company": "IBM",
+      "profession": "Lead QA Engineer"
+    },
+    "createAt": "2023-11-12T06:47:30.466Z",
+    "tags": ["QA Testing"]
+  },
+  {
+    "_id": "6",
+    "title": "How to create a profile on Linkedin for a successful job search. Additional search sources",
+    "img": "https://i.ibb.co/sFnLdPY/1-2.webp",
+    "description": "",
+    "views": 584,
+    "author": {
+      "avatar": "https://i.ibb.co/RCK2ht8/7.png",
+      "name": "Samantha Crowdwood",
+      "company": "Tesla",
+      "profession": "Senior Recruiter"
+    },
+    "createAt": "2023-11-12T06:47:30.466Z",
+    "tags": ["Career"]
+  }
+]

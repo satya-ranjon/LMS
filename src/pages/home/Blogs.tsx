@@ -4,8 +4,9 @@ import { timeFormatDMY } from "../../utils/timeFormat";
 import Avatar from "../../components/common/Avatar";
 import Button from "../../components/common/Button";
 import { IoIosArrowForward } from "react-icons/io";
+import React from "react";
 
-const Blogs = () => {
+const Blogs: React.FC = () => {
   return (
     <div className=" bg-dark-3 py-16 md:py-28 lg:py-36">
       <h1

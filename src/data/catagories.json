@@ -1,0 +1,60 @@
+[
+  {
+    "id": "catagories1",
+    "label": "Education",
+    "catagories": [
+      { "id": "ed1", "link": "#", "label": "About project" },
+      { "id": "ed2", "link": "#", "label": "Blog" },
+      { "id": "ed3", "link": "#", "label": "Cooperation" },
+      { "id": "ed4", "link": "#", "label": "Lectors" },
+      { "id": "ed5", "link": "#", "label": "Career" },
+      { "id": "ed6", "link": "#", "label": "Certificates" },
+      { "id": "ed7", "link": "#", "label": "Reviews" }
+    ]
+  },
+  {
+    "id": "catagories2",
+    "label": "Business",
+    "catagories": [
+      { "id": "bu1", "link": "#", "label": "Entrepreneurship" },
+      { "id": "bu2", "link": "#", "label": "Marketing" },
+      { "id": "bu3", "link": "#", "label": "Freelance" },
+      { "id": "bu4", "link": "#", "label": "Leadership" }
+    ]
+  },
+  {
+    "id": "catagories3",
+    "label": "Technology",
+    "catagories": [
+      { "id": "te1", "link": "#", "label": "Web Development" },
+      { "id": "te2", "link": "#", "label": "Game Design" },
+      { "id": "te3", "link": "#", "label": "QA Testing" },
+      { "id": "te4", "link": "#", "label": "UI/UX Design" },
+      { "id": "te5", "link": "#", "label": "Data Science" },
+      { "id": "te6", "link": "#", "label": "Product Management" }
+    ]
+  },
+  {
+    "id": "catagories4",
+    "label": "Lifestyle",
+    "catagories": [
+      { "id": "li1", "link": "#", "label": "Cooking" },
+      { "id": "li2", "link": "#", "label": "Gaming" },
+      { "id": "li3", "link": "#", "label": "Languages" },
+      { "id": "li4", "link": "#", "label": "Fashion Design" },
+      { "id": "li5", "link": "#", "label": "Floristic" },
+      { "id": "li6", "link": "#", "label": "Interior Design" }
+    ]
+  },
+  {
+    "id": "catagories5",
+    "label": "Creative",
+    "catagories": [
+      { "id": "cr1", "link": "#", "label": "Animation" },
+      { "id": "cr2", "link": "#", "label": "Drawing" },
+      { "id": "cr3", "link": "#", "label": "Illustration" },
+      { "id": "cr4", "link": "#", "label": "Graphic Design" },
+      { "id": "cr5", "link": "#", "label": "Photographing" }
+    ]
+  }
+]

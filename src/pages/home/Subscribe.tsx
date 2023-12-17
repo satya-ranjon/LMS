@@ -1,7 +1,8 @@
+import React from "react";
 import Button from "../../components/common/Button";
 import Container from "../../components/common/Container";
 
-const Subscribe = () => {
+const Subscribe: React.FC = () => {
   return (
     <div className="bg-gradient-to-r from-[#73d2a6c7] to-[#d1e537c7] py-24 xl:px-48">
       <Container>

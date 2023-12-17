@@ -14,6 +14,7 @@ import Nonfiction from "./Notification";
 import Logo from "../../common/Logo";
 import useDisplay from "../../../hooks/useDisplay";
 import NavBarLink from "./NavBarLink";
+import { Link } from "react-router-dom";
 
 const DashBoardNavbar = () => {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState<boolean>();
@@ -23,21 +24,23 @@ const DashBoardNavbar = () => {
   return (
     <div className=" bg-dark-1 md:rounded-lg">
       <div className="py-6 px-5 relative ">
-        <div className=" flex justify-between items-center gap-4 lg:gap-8">
-          <div className=" md:hidden">
+        <div className=" flex justify-between items-center gap-4 lg:gap-8 z-50">
+          <Link to="/" className=" md:hidden">
             <Logo />
-          </div>
+          </Link>
           <div
             className={` ${
               mobileMenu
                 ? `absolute ${
-                    mobileMenuIsOpen ? "top-20" : "-top-20"
-                  } right-0 left-0 top-20 justify-center py-5 z-50`
+                    mobileMenuIsOpen ? "top-20 " : "-top-20"
+                  } right-0 left-0  justify-center py-5 `
                 : "justify-start "
             }  bg-dark-1  flex items-center gap-4 lg:gap-8 text-3xl duration-500  transition-all `}>
-            <div className=" hidden md:block pr-4 lg:pr-8 border-r-[2px] border-zinc-500">
+            <Link
+              to="/"
+              className=" hidden md:block pr-4 lg:pr-8 border-r-[2px] border-zinc-500">
               <img src={images.logo} alt="logo" className=" w-10 h-10" />
-            </div>
+            </Link>
             <NavBarLink to="/dashboard/courses">
               <PiNotebookFill />
             </NavBarLink>

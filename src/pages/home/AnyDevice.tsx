@@ -8,8 +8,9 @@ import {
   FaCalendarAlt,
 } from "react-icons/fa";
 import PlayStor from "../../components/ui/PlayStor.js";
+import React from "react";
 
-const AnyDevice = () => {
+const AnyDevice: React.FC = () => {
   return (
     <div className=" bg-dark-1 bg-bg5 bg-cover bg-no-repeat bg-center py-24 md:py-36 md:pb-48">
       <Container>

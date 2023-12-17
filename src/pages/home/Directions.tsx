@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "../../components/common/Button";
 const courseType = [
   {
@@ -21,7 +22,7 @@ const courseType = [
     total: 5,
   },
 ];
-const Directions = () => {
+const Directions: React.FC = () => {
   return (
     <>
       <h1 className=" text-center text-2xl md:text-4xl lg:text-5xl font-bold text">

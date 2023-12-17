@@ -12,8 +12,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { TbWorldStar } from "react-icons/tb";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { AiOutlineGoogle } from "react-icons/ai";
+import React from "react";
 
-const Reviews = () => {
+const Reviews: React.FC = () => {
   const [windowWidth] = useDisplay();
 
   const settings = {
