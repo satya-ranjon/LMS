@@ -9,14 +9,14 @@ interface SelectOption {
 
 interface RenderLabelProps {
   isSelected: SelectOption;
-  getRecommendedLabelProps: (overrideProps?: Object) => Object;
+  getRecommendedLabelProps: (overrideProps?: object) => object;
 }
 
 interface SelectProps {
   label?: string;
   options?: Array<SelectOption>;
   onOptionSelected?: (option: SelectOption) => void;
-  defaultSelectedIndex?: number | null;
+  defaultSelectedIndex?: number;
   renderLabel?: (props: RenderLabelProps) => React.ReactNode;
   optionsColor?: string;
 }
@@ -25,7 +25,7 @@ const Select: React.FC<SelectProps> = ({
   label = "Please Select a Option",
   options = [],
   onOptionSelected,
-  defaultSelectedIndex = null,
+  defaultSelectedIndex = 0,
   renderLabel,
   optionsColor = "text-zinc-500",
 }) => {
