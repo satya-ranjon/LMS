@@ -1,11 +1,7 @@
-import DashBoardWrapper from "../../../layout/DashBoardWrapper";
+import React from "react";
 
-const Favorites = () => {
-  return (
-    <DashBoardWrapper>
-      <div className="">Favorites</div>
-    </DashBoardWrapper>
-  );
+const Favorites: React.FC = () => {
+  return <div className="">Favorites</div>;
 };
 
 export default Favorites;

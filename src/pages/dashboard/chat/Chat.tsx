@@ -1,11 +1,7 @@
-import DashBoardWrapper from "../../../layout/DashBoardWrapper";
+import React from "react";
 
-const Chat = () => {
-  return (
-    <DashBoardWrapper>
-      <div className="">chat</div>
-    </DashBoardWrapper>
-  );
+const Chat: React.FC = () => {
+  return <div className="">chat</div>;
 };
 
 export default Chat;

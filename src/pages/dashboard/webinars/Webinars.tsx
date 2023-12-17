@@ -1,11 +1,7 @@
-import DashBoardWrapper from "../../../layout/DashBoardWrapper";
+import React from "react";
 
-const Webinars = () => {
-  return (
-    <DashBoardWrapper>
-      <div className="">Webinars</div>
-    </DashBoardWrapper>
-  );
+const Webinars: React.FC = () => {
+  return <div className="">Webinars</div>;
 };
 
 export default Webinars;

@@ -2,7 +2,8 @@ import Button from "../../components/common/Button";
 import Container from "../../components/common/Container";
 import React, { useState, useLayoutEffect } from "react";
 import courses from "../../data/courses.json";
-import { BsBookmark, BsBookmarkFill } from "react-icons/bs";
+import { BsBookmark } from "react-icons/bs";
+// import { BsBookmarkFill } from "react-icons/bs";
 import {
   MdOutlineArrowBackIosNew,
   MdOutlineArrowForwardIos,
@@ -140,7 +141,7 @@ const FreeLessons: React.FC = () => {
                 ? courses?.length - 1
                 : courses?.length - 2
             )
-            .map((item, i) => {
+            .map((_item, i) => {
               const active = dotActive === i;
               return (
                 <span

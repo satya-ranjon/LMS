@@ -1,11 +1,5 @@
-import DashBoardWrapper from "../../../layout/DashBoardWrapper";
-
-const Calendar = () => {
-  return (
-    <DashBoardWrapper>
-      <div className=" ">Calendar</div>
-    </DashBoardWrapper>
-  );
+const Calendar: React.FC = () => {
+  return <div className=" ">Calendar</div>;
 };
 
 export default Calendar;

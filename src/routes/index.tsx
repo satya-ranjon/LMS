@@ -23,28 +23,35 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/dashboard/courses",
-    element: <Courses />,
-  },
-  {
-    path: "/dashboard/chat",
-    element: <Chat />,
-  },
-  {
-    path: "/dashboard/calendar",
-    element: <Calendar />,
-  },
-  {
-    path: "/dashboard/favorites",
-    element: <Favorites />,
-  },
-  {
-    path: "/dashboard/badges",
-    element: <Badges />,
-  },
-  {
-    path: "/dashboard/webinars",
-    element: <Webinars />,
+    path: "dashboard",
+    element: <DashBoardWrapper />,
+    errorElement: <NotFound />,
+    children: [
+      {
+        path: "courses",
+        element: <Courses />,
+      },
+      {
+        path: "chat",
+        element: <Chat />,
+      },
+      {
+        path: "calendar",
+        element: <Calendar />,
+      },
+      {
+        path: "favorites",
+        element: <Favorites />,
+      },
+      {
+        path: "badges",
+        element: <Badges />,
+      },
+      {
+        path: "webinars",
+        element: <Webinars />,
+      },
+    ],
   },
 ]);
 

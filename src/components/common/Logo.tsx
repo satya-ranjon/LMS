@@ -1,6 +1,7 @@
+import React from "react";
 import { images } from "../../constant";
 
-const Logo = () => {
+const Logo: React.FC = () => {
   return (
     <div className=" select-none  flex justify-start gap-4 items-center w-fit cursor-pointer">
       <img

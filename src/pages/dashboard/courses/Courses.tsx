@@ -1,11 +1,7 @@
-import DashBoardWrapper from "../../../layout/DashBoardWrapper";
+import React from "react";
 
-const Courses = () => {
-  return (
-    <DashBoardWrapper>
-      <div className="">Courses</div>
-    </DashBoardWrapper>
-  );
+const Courses: React.FC = () => {
+  return <div className="">Courses</div>;
 };
 
 export default Courses;

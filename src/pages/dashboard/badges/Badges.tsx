@@ -1,11 +1,7 @@
-import DashBoardWrapper from "../../../layout/DashBoardWrapper";
+import React from "react";
 
-const Badges = () => {
-  return (
-    <DashBoardWrapper>
-      <div className=" ">Badges</div>
-    </DashBoardWrapper>
-  );
+const Badges: React.FC = () => {
+  return <div className=" ">Badges</div>;
 };
 
 export default Badges;
