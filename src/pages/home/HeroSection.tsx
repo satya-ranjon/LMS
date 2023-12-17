@@ -25,7 +25,7 @@ const HeroSection = () => {
               </Button>
             </div>
           </div>
-          <div className="">
+          <div className=" pointer-events-none select-none">
             <img
               src={images.certificate}
               className="w-[340px] h-[300px] lg:w-[440px] lg:h-[480px] xl:w-[640px] xl:h-[580px]"
