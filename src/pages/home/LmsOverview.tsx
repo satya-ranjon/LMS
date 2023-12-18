@@ -5,7 +5,7 @@ import images from "../../constant/images.js";
 const LmsOverview: React.FC = () => {
   return (
     <div
-      style={{ backgroundImage: `url(${images.bg4})` }}
+      style={{ backgroundImage: `url("./bg4.png")` }}
       className="bg-cover bg-no-repeat bg-center">
       <Container>
         <div className=" flex flex-col md:flex-row  justify-center items-center gap-16 pt-28">

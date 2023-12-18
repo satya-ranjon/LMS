@@ -13,11 +13,6 @@ import choosecourse from "../assets/choosecourse.png";
 import effectfily from "../assets/effectfily.png";
 import knowlagdge from "../assets/knowlagdge.png";
 import anydevice from "../assets/anydevice.png";
-import homebg from "../assets/homebg.png";
-import diplomacardbg from "../assets/diplomacardbg.png";
-import bg2 from "../assets/bg2.png";
-import bg4 from "../assets/bg4.png";
-import bg5 from "../assets/bg5.png";
 
 const images = {
   certificate,
@@ -35,11 +30,6 @@ const images = {
   effectfily,
   knowlagdge,
   anydevice,
-  homebg,
-  diplomacardbg,
-  bg2,
-  bg4,
-  bg5,
 };
 
 export default images;

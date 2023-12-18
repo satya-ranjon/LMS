@@ -13,7 +13,7 @@ import React from "react";
 const AnyDevice: React.FC = () => {
   return (
     <div
-      style={{ backgroundImage: `url(${images.bg5})` }}
+      style={{ backgroundImage: `url("./bg5.png")` }}
       className=" bg-dark-1 bg-cover bg-no-repeat bg-center py-24 md:py-36 md:pb-48">
       <Container>
         <h1 className=" text-center text font-bold text-2xl md:text-4xl lg:text-5xl">

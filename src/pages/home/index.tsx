@@ -13,7 +13,6 @@ import Blogs from "./Blogs.js";
 import Subscribe from "./Subscribe.js";
 import AnswersQuestion from "./AnswersQuestion.js";
 import React from "react";
-import images from "../../constant/images.js";
 
 const Home: React.FC = () => {
   return (
@@ -25,7 +24,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div
-        style={{ backgroundImage: `url(${images.bg2})` }}
+        style={{ backgroundImage: `url("./bg2.png")` }}
         className=" pt-96 md:pt-64 pb-20 bg-dark-1 bg-cover bg-no-repeat bg-center">
         <Container>
           <Directions />
