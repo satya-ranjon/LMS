@@ -5,8 +5,7 @@ import { images } from "../../constant";
 
 const HeroSection: React.FC = () => {
   return (
-    <div
-      className={` w-full bg-no-repeat bg-cover  bg-center bg-hero-pattern  `}>
+    <div className={` w-full bg-no-repeat bg-cover  bg-center heroBG  `}>
       <Container>
         <div className=" flex flex-col gap-10 md:gap-0 md:flex-row justify-between items-center py-24">
           <div className="">

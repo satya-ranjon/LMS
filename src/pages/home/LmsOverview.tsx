@@ -4,7 +4,7 @@ import images from "../../constant/images.js";
 
 const LmsOverview: React.FC = () => {
   return (
-    <div className="  bg-bg4 bg-cover bg-no-repeat bg-center">
+    <div className="bg4 bg-cover bg-no-repeat bg-center">
       <Container>
         <div className=" flex flex-col md:flex-row  justify-center items-center gap-16 pt-28">
           <div className="w-full flex flex-col gap-8 items-start justify-center">

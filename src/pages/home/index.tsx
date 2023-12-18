@@ -23,7 +23,7 @@ const Home: React.FC = () => {
           <BrandList />
         </div>
       </div>
-      <div className=" pt-96 md:pt-64 pb-20 bg-dark-1 bg-bg2 bg-cover bg-no-repeat bg-center">
+      <div className=" pt-96 md:pt-64 pb-20 bg-dark-1 bg2 bg-cover bg-no-repeat bg-center">
         <Container>
           <Directions />
           <DiplomaCard />

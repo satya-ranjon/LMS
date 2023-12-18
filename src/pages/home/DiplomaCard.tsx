@@ -47,7 +47,7 @@ const DiplomaCard: React.FC = () => {
         </div>
 
         {/* Card Two  */}
-        <div className="bg-diplomacardbg bg-cover bg-no-repeat bg-center w-full border-[1px] border-lime-400 rounded-xl relative overflow-hidden h-[500px] xl:h-[500px] p-14">
+        <div className="diplomacardbg bg-cover bg-no-repeat bg-center w-full border-[1px] border-lime-400 rounded-xl relative overflow-hidden h-[500px] xl:h-[500px] p-14">
           <h3 className=" text  text-xl tracking-wider font-semibold">
             And post it on linkedIn
           </h3>
