@@ -31,23 +31,6 @@
   color: #252728 !important;
 }
 
-.heroBG {
-  background-image: url("./src/assets/homebg.png");
-}
-
-.diplomacardbg {
-  background-image: url("./src/assets/diplomacardbg.png");
-}
-.bg2 {
-  background-image: url("./src/assets/bg2.png");
-}
-.bg4 {
-  background-image: url("./src/assets/bg4.png");
-}
-.bg5 {
-  background-image: url("./src/assets/bg5.png");
-}
-
 /* This will customize the vertical scrollbar */
 ::-webkit-scrollbar {
   width: 5px;

@@ -13,6 +13,7 @@ import Blogs from "./Blogs.js";
 import Subscribe from "./Subscribe.js";
 import AnswersQuestion from "./AnswersQuestion.js";
 import React from "react";
+import images from "../../constant/images.js";
 
 const Home: React.FC = () => {
   return (
@@ -23,7 +24,9 @@ const Home: React.FC = () => {
           <BrandList />
         </div>
       </div>
-      <div className=" pt-96 md:pt-64 pb-20 bg-dark-1 bg2 bg-cover bg-no-repeat bg-center">
+      <div
+        style={{ backgroundImage: `url(${images.bg2})` }}
+        className=" pt-96 md:pt-64 pb-20 bg-dark-1 bg-cover bg-no-repeat bg-center">
         <Container>
           <Directions />
           <DiplomaCard />
