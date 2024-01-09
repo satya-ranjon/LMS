@@ -18,6 +18,7 @@ fack
 .vscode/*
 !.vscode/extensions.json
 .idea
+info.txt
 .DS_Store
 *.suo
 *.ntvs*
