@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import createArrayUpToNumber from "../../utils/createArrayUpToNumber";
-import { Gap } from "../../types/style";
+import { Gap } from "../../types";
 
 export enum StarSize {
   SM = "sm",
