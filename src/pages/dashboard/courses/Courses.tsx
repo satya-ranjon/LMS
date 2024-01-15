@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CourseViewData } from "../../../types";
 import data from "../../../data/courses.json";
-import SingleCourse from "./SingleCourse";
+import CourseCard from "./CourseCard";
 
 const filterOptions = [
   { label: "All", value: CourseViewData.ALL },
@@ -56,7 +56,7 @@ const Courses: React.FC = () => {
             return;
           }
           return (
-            <SingleCourse
+            <CourseCard
               key={course._id}
               course={{
                 _id: course._id,

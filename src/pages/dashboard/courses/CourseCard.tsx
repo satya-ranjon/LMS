@@ -8,7 +8,7 @@ interface CourseProps {
   };
 }
 
-const SingleCourse: React.FC<CourseProps> = ({ course }) => {
+const CourseCard: React.FC<CourseProps> = ({ course }) => {
   const lastLesson = "Drawing & Animation. Most powerful tools overview";
 
   return (
@@ -32,4 +32,4 @@ const SingleCourse: React.FC<CourseProps> = ({ course }) => {
   );
 };
 
-export default SingleCourse;
+export default CourseCard;
