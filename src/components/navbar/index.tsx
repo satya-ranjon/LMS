@@ -5,6 +5,7 @@ import useDisplay from "../../hooks/useDisplay";
 import { useLayoutEffect, useState } from "react";
 import LanguagesSelect from "../common/LanguagesSelect";
 import { useNavigate } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
 
 const menu = [
   { link: "/", name: "Explore" },
@@ -47,6 +48,14 @@ const Navbar = () => {
                     ? "  flex gap-5 text-base font-semibold justify-start items-center "
                     : " fixed bg-dark-1 top-0 w-[250px] h-screen right-0 px-3"
                 }`}>
+                <div
+                  className={`${
+                    windowWidth > 1024 ? "hidden" : " "
+                  } w-full py-6 px-2`}>
+                  <button onClick={handleMobileMenu}>
+                    <IoMdClose className="text-4xl duration-300 transition-colors hover:text-lime-400" />
+                  </button>
+                </div>
                 {menu.map((item, i) => (
                   <div
                     className={`${
@@ -59,7 +68,7 @@ const Navbar = () => {
                   </div>
                 ))}
                 <div className={`${windowWidth > 1024 ? "hidden" : " "}`}>
-                  <span className=""> Language</span>
+                  <span className=" pb-2"> Language</span>
                   <LanguagesSelect />
                 </div>
               </div>

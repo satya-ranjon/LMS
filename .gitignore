@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 .env
-fack
+fake
 
 # Editor directories and files
 .vscode/*
