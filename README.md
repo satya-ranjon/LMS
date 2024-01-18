@@ -1,4 +1,30 @@
-# Software Requirements Specification (SRS) for Key Learning Platform
+## Run the Project
+
+### Prerequisites
+
+Before running the project, ensure that you have the following prerequisites installed on your machine:
+
+- [Node.js](https://nodejs.org/): Make sure you have Node.js installed, as it includes npm (Node Package Manager) which is used to manage project dependencies.
+
+### Installation
+
+1. Clone the repository to your local machine :
+
+   ```bash
+   git clone https://github.com/Lihan37/Resume-Craft.git
+   ```
+
+2. Run the project local machine :
+
+   ```bash
+   cd Resume-Craft
+   npm install
+   npm run dev
+
+      or
+   yarn install
+   yarn run dev
+   ```
 
 ## 1. Introduction
 
