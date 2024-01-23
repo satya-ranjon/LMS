@@ -9,16 +9,17 @@ import {
 } from "react-icons/md";
 import Avatar from "../../components/common/Avatar";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 
 // Custom component for the previous button
-const Button1: React.FC<{
+export const RoundedButton: React.FC<{
   left?: string;
   right?: string;
   onClick: () => void;
   children: React.ReactNode;
 }> = ({ onClick, left, right, children }) => (
   <button
-    className="p-2 absolute top-3/4 md:top-1/2 transform -translate-y-1/2 text-white flex justify-center items-center z-50 text-4xl bg-dark-3 hover:bg-dark-2 duration-300 transition-colors rounded-full"
+    className="p-2 absolute top-1/2 transform -translate-y-1/2 text-white flex justify-center items-center z-50 text-4xl bg-dark-3 hover:bg-dark-2 duration-300 transition-colors rounded-full"
     style={{ left: left, right: right }}
     onClick={onClick}>
     {children}
@@ -141,12 +142,12 @@ const FreeLessons: React.FC = () => {
               );
             })}
           </Swiper>
-          <Button1 onClick={handleSlidePrev} left="7%">
+          <RoundedButton onClick={handleSlidePrev} left="7%">
             <MdOutlineArrowBackIosNew />
-          </Button1>
-          <Button1 onClick={handleSlideNext} right="7%">
+          </RoundedButton>
+          <RoundedButton onClick={handleSlideNext} right="7%">
             <MdOutlineArrowForwardIos />
-          </Button1>
+          </RoundedButton>
         </Container>
       </div>
     </>
