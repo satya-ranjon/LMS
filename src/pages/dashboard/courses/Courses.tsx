@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CourseViewData } from "../../../types";
 import data from "../../../data/courses.json";
 import CourseCard from "./CourseCard";
+import Tab from "./Tab";
 
 const filterOptions = [
   { label: "All", value: CourseViewData.ALL },
@@ -37,20 +38,21 @@ const Courses: React.FC = () => {
     <div className="my-5">
       {/* Data filtering options  */}
       <div className="w-full flex justify-between items-center text-xl text-white bg-black p-2">
-        {filterOptions.map((item) => (
-          <button
-            key={item.value}
-            onClick={() => setActiveData(item.value)}
-            className={`text-center w-full rounded py-1 ${
-              activeData === item.value ? "bg-dark-1 " : "text-gray-500"
-            }`}>
-            {item.label}
-          </button>
-        ))}
+        {filterOptions.map((item) => {
+          const isActive = activeData === item.value;
+          return (
+            <Tab
+              key={item.value}
+              isActive={isActive}
+              setActive={() => setActiveData(item.value)}
+              label={item.label}
+            />
+          );
+        })}
       </div>
 
       {/* Show the user courses  */}
-      <div className="grid grid-cols-2 gap-10 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
         {courses.map((course) => {
           if (!course._id || !course.name || !course.img) {
             return;

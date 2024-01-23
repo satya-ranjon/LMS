@@ -13,7 +13,11 @@ const CourseCard: React.FC<CourseProps> = ({ course }) => {
 
   return (
     <div key={course._id} className="rounded-md overflow-hidden">
-      <img src={course.img} alt={course.name} className="w-full h-80" />
+      <img
+        src={course.img}
+        alt={course.name}
+        className="w-full h-56 lg:h-72 xl:h-80"
+      />
       <div className="p-3 py-4 bg-dark-1 w-full text-white">
         <h1 className="text-xl font-bold">
           {course.name?.slice(0, 55)}
